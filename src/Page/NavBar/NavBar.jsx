@@ -15,7 +15,6 @@ const NavBar = () => {
         <li> <Link to='/'>Home</Link></li>
         <li> <Link to='/login'>Login</Link></li>
         <li> <Link to='/testimonilas'>Testimonials</Link></li>
-
     </>
     return (
         <div className="navbar bg-gray-200">
@@ -44,7 +43,7 @@ const NavBar = () => {
                 {
                     user ?<div className="flex items-center gap-2">
                         <h3 >{user.displayName}</h3>
-                        <img src={user.photoURL} alt="" />
+                        <img className="w-10 rounded-full" src={user.photoURL} alt="" />
                         <button onClick={handleSingOut} className="btn">Sign Out</button>
                        </div>
                         :
